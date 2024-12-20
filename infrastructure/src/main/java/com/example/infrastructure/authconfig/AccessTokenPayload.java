@@ -1,7 +1,6 @@
-package com.example.presentation.api.common;
+package com.example.infrastructure.authconfig;
 
 import com.example.domain_models.models.account.Permission;
-import com.example.presentation.api.authconfig.JWTPayload;
 
 import java.util.ArrayList;
 import java.util.Collections;

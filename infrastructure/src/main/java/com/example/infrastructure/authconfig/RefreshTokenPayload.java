@@ -1,7 +1,4 @@
-package com.example.presentation.api.common;
-
-
-import com.example.presentation.api.authconfig.JWTPayload;
+package com.example.infrastructure.authconfig;
 
 import java.util.Date;
 import java.util.HashMap;

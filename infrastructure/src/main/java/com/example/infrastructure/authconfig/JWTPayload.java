@@ -1,4 +1,4 @@
-package com.example.presentation.api.authconfig;
+package com.example.infrastructure.authconfig;
 
 import java.util.Date;
 import java.util.Map;
