@@ -1,0 +1,20 @@
+
+### Authenticate 
+GET {{host}}/actuator
+
+### authenticate
+POST {{host}}/v1/accounts/authenticate
+Content-Type: application/json
+
+{
+  "idToken": "+201260032632",
+  "deviceId": "91235778sd412qwwtest",
+  "deviceType": "android"
+}
+
+> {%
+    client.assert(response.status === 200)
+    client.global.set("accessToken", response.body.accessToken)
+    client.global.set("refreshToken", response.body.refreshToken)
+
+%}
