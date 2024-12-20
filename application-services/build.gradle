@@ -1,5 +1,7 @@
 plugins {
     id 'java-library'
+    id 'org.springframework.boot' version '3.3.5'
+    id 'io.spring.dependency-management' version '1.1.6'
 }
 
 java {
@@ -8,4 +10,16 @@ java {
 }
 dependencies {
     api project(':domain-services')
+    implementation 'org.springframework.boot:spring-boot-starter-web'
+
+}
+
+
+repositories {
+    mavenCentral()
+}
+dependencyManagement {
+    imports {
+        mavenBom "org.springframework.modulith:spring-modulith-bom:1.2.2"
+    }
 }
