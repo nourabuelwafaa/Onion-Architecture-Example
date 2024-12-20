@@ -1,6 +1,5 @@
 package com.example.application_services.services;
 
-
 import com.example.domain_models.models.account.Account;
 import com.example.domain_models.exceptions.AppException;
 import com.example.domain_models.models.account.Tokens;
