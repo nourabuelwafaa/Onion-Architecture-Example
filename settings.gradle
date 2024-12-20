@@ -1,2 +1,3 @@
 rootProject.name = 'onion_architecture_example'
 include ':domain-models'
+include ':domain-services'
